@@ -16,7 +16,7 @@ namespace DeliveryLogisticsTrackerSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewPersonnel());
+            Application.Run(new Form1());
         }
     }
 }
