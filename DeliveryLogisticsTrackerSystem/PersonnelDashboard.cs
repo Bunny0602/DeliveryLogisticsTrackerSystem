@@ -7,25 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace DeliveryLogisticsTrackerSystem
 {
-    public partial class adminDashboard : Form
+    public partial class PersonnelDashboard : Form
     {
-
-        Database db = new Database();
-
-        public adminDashboard()
+        public PersonnelDashboard()
         {
             InitializeComponent();
-            totalUsers();
-        }
-
-        private void totalUsers()
-        {
-            int totalUser = db.TotalUsers();
-            lblTotalUsers.Text = totalUser.ToString();
         }
     }
 }

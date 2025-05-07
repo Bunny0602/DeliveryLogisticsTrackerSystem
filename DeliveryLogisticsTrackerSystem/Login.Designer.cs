@@ -37,15 +37,16 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lnkRegister = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnlogin = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
@@ -86,7 +87,6 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
@@ -179,15 +179,15 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(235)))));
             this.panel7.Controls.Add(this.flowLayoutPanel1);
-            this.panel7.Controls.Add(this.linkLabel2);
+            this.panel7.Controls.Add(this.lnkRegister);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.btnlogin);
+            this.panel7.Controls.Add(this.btnLogin);
             this.panel7.Controls.Add(this.linkLabel1);
-            this.panel7.Controls.Add(this.textBox2);
+            this.panel7.Controls.Add(this.txtPassword);
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.txtEmail);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.panel44);
@@ -236,19 +236,29 @@
             this.panel7.Size = new System.Drawing.Size(606, 452);
             this.panel7.TabIndex = 6;
             // 
-            // linkLabel2
+            // flowLayoutPanel1
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.linkLabel2.Location = new System.Drawing.Point(324, 412);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(130, 20);
-            this.linkLabel2.TabIndex = 53;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Create an Account";
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Black;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 45);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(606, 2);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // lnkRegister
+            // 
+            this.lnkRegister.AutoSize = true;
+            this.lnkRegister.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.lnkRegister.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.lnkRegister.Location = new System.Drawing.Point(324, 412);
+            this.lnkRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lnkRegister.Name = "lnkRegister";
+            this.lnkRegister.Size = new System.Drawing.Size(130, 20);
+            this.lnkRegister.TabIndex = 53;
+            this.lnkRegister.TabStop = true;
+            this.lnkRegister.Text = "Create an Account";
+            this.lnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRegister_LinkClicked);
             // 
             // label4
             // 
@@ -261,24 +271,25 @@
             this.label4.TabIndex = 52;
             this.label4.Text = "Don’t have an account? ";
             // 
-            // btnlogin
+            // btnLogin
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
-            this.btnlogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
-            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
-            this.btnlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(34)))));
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(152, 323);
-            this.btnlogin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnlogin.MaximumSize = new System.Drawing.Size(300, 29);
-            this.btnlogin.MinimumSize = new System.Drawing.Size(300, 29);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(300, 29);
-            this.btnlogin.TabIndex = 51;
-            this.btnlogin.TabStop = false;
-            this.btnlogin.Text = "Login";
-            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(34)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(152, 323);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnLogin.MaximumSize = new System.Drawing.Size(300, 29);
+            this.btnLogin.MinimumSize = new System.Drawing.Size(300, 29);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(300, 29);
+            this.btnLogin.TabIndex = 51;
+            this.btnLogin.TabStop = false;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // linkLabel1
             // 
@@ -294,17 +305,17 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot Password?";
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(152, 237);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.textBox2.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox2.MinimumSize = new System.Drawing.Size(300, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 27);
-            this.textBox2.TabIndex = 49;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(152, 237);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPassword.MaximumSize = new System.Drawing.Size(300, 30);
+            this.txtPassword.MinimumSize = new System.Drawing.Size(300, 30);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(300, 27);
+            this.txtPassword.TabIndex = 49;
             // 
             // pictureBox3
             // 
@@ -341,17 +352,17 @@
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(152, 162);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.textBox1.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox1.MinimumSize = new System.Drawing.Size(300, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 27);
-            this.textBox1.TabIndex = 45;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(152, 162);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtEmail.MaximumSize = new System.Drawing.Size(300, 30);
+            this.txtEmail.MinimumSize = new System.Drawing.Size(300, 30);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(300, 27);
+            this.txtEmail.TabIndex = 45;
             // 
             // label2
             // 
@@ -775,15 +786,6 @@
             this.panel8.Size = new System.Drawing.Size(20, 21);
             this.panel8.TabIndex = 7;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Black;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 45);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(606, 2);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -826,15 +828,15 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.LinkLabel lnkRegister;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.Panel panel45;
