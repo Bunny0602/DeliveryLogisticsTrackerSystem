@@ -88,6 +88,18 @@
     <Compile Include="userDashboard.Designer.cs">
       <DependentUpon>userDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewData.Designer.cs">
+      <DependentUpon>ViewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPersonnel.Designer.cs">
+      <DependentUpon>ViewPersonnel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userDashboard.resx">
       <DependentUpon>userDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewData.resx">
+      <DependentUpon>ViewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPersonnel.resx">
+      <DependentUpon>ViewPersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
