@@ -64,6 +64,7 @@
             this.Btnlogin.TabStop = false;
             this.Btnlogin.Text = "Login";
             this.Btnlogin.UseVisualStyleBackColor = false;
+            this.Btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             // 
             // Btnregister
             // 
@@ -79,6 +80,7 @@
             this.Btnregister.TabStop = false;
             this.Btnregister.Text = "Register";
             this.Btnregister.UseVisualStyleBackColor = false;
+            this.Btnregister.Click += new System.EventHandler(this.Btnregister_Click);
             // 
             // pictureBox2
             // 

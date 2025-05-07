@@ -33,14 +33,16 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Home = new System.Windows.Forms.Button();
             this.Logout = new System.Windows.Forms.Button();
-            this.History = new System.Windows.Forms.Button();
             this.CreateOrder = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtRole = new System.Windows.Forms.TextBox();
+            this.Role = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.back = new System.Windows.Forms.PictureBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
@@ -53,10 +55,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRole = new System.Windows.Forms.TextBox();
-            this.Role = new System.Windows.Forms.Label();
-            this.txtStatus = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -120,23 +118,6 @@
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = false;
             // 
-            // History
-            // 
-            this.History.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
-            this.History.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.History.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.History.FlatAppearance.BorderSize = 0;
-            this.History.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
-            this.History.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(90)))));
-            this.History.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.History.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.History.Location = new System.Drawing.Point(0, 343);
-            this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(300, 50);
-            this.History.TabIndex = 25;
-            this.History.Text = "History";
-            this.History.UseVisualStyleBackColor = false;
-            // 
             // CreateOrder
             // 
             this.CreateOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
@@ -162,15 +143,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(300, 2);
             this.panel6.TabIndex = 27;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(0, 413);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(300, 2);
-            this.panel5.TabIndex = 26;
             // 
             // panel4
             // 
@@ -224,6 +196,50 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(810, 424);
             this.panel7.TabIndex = 30;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.BackColor = System.Drawing.Color.White;
+            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtStatus.Location = new System.Drawing.Point(439, 249);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
+            this.txtStatus.Size = new System.Drawing.Size(300, 27);
+            this.txtStatus.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.label8.Location = new System.Drawing.Point(366, 249);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 28);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Status";
+            // 
+            // txtRole
+            // 
+            this.txtRole.BackColor = System.Drawing.Color.White;
+            this.txtRole.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRole.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtRole.Location = new System.Drawing.Point(439, 202);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.ReadOnly = true;
+            this.txtRole.Size = new System.Drawing.Size(300, 27);
+            this.txtRole.TabIndex = 13;
+            // 
+            // Role
+            // 
+            this.Role.AutoSize = true;
+            this.Role.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.Role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.Role.Location = new System.Drawing.Point(379, 200);
+            this.Role.Name = "Role";
+            this.Role.Size = new System.Drawing.Size(50, 28);
+            this.Role.TabIndex = 12;
+            this.Role.Text = "Role";
             // 
             // txtAddress
             // 
@@ -357,50 +373,6 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "View Personnel Data";
             // 
-            // txtRole
-            // 
-            this.txtRole.BackColor = System.Drawing.Color.White;
-            this.txtRole.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRole.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.txtRole.Location = new System.Drawing.Point(439, 202);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.ReadOnly = true;
-            this.txtRole.Size = new System.Drawing.Size(300, 27);
-            this.txtRole.TabIndex = 13;
-            // 
-            // Role
-            // 
-            this.Role.AutoSize = true;
-            this.Role.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.Role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.Role.Location = new System.Drawing.Point(379, 200);
-            this.Role.Name = "Role";
-            this.Role.Size = new System.Drawing.Size(50, 28);
-            this.Role.TabIndex = 12;
-            this.Role.Text = "Role";
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.BackColor = System.Drawing.Color.White;
-            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.txtStatus.Location = new System.Drawing.Point(439, 249);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(300, 27);
-            this.txtStatus.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label8.Location = new System.Drawing.Point(366, 249);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 28);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Status";
-            // 
             // ViewPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
@@ -411,10 +383,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Logout);
-            this.Controls.Add(this.History);
             this.Controls.Add(this.CreateOrder);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -442,10 +412,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Home;
         private System.Windows.Forms.Button Logout;
-        private System.Windows.Forms.Button History;
         private System.Windows.Forms.Button CreateOrder;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
