@@ -46,20 +46,20 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.back = new System.Windows.Forms.PictureBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.textFullName = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.CirclepbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CirclepbProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -182,14 +182,14 @@
             this.panel7.Controls.Add(this.txtAddress);
             this.panel7.Controls.Add(this.back);
             this.panel7.Controls.Add(this.txtPhoneNumber);
-            this.panel7.Controls.Add(this.textFullName);
+            this.panel7.Controls.Add(this.txtFullName);
             this.panel7.Controls.Add(this.txtEmail);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Controls.Add(this.guna2CirclePictureBox1);
+            this.panel7.Controls.Add(this.CirclepbProfile);
             this.panel7.Location = new System.Drawing.Point(345, 143);
             this.panel7.MaximumSize = new System.Drawing.Size(810, 424);
             this.panel7.MinimumSize = new System.Drawing.Size(810, 424);
@@ -275,16 +275,16 @@
             this.txtPhoneNumber.Size = new System.Drawing.Size(300, 27);
             this.txtPhoneNumber.TabIndex = 8;
             // 
-            // textFullName
+            // txtFullName
             // 
-            this.textFullName.BackColor = System.Drawing.Color.White;
-            this.textFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFullName.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textFullName.Location = new System.Drawing.Point(439, 107);
-            this.textFullName.Name = "textFullName";
-            this.textFullName.ReadOnly = true;
-            this.textFullName.Size = new System.Drawing.Size(300, 27);
-            this.textFullName.TabIndex = 7;
+            this.txtFullName.BackColor = System.Drawing.Color.White;
+            this.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(439, 107);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.ReadOnly = true;
+            this.txtFullName.Size = new System.Drawing.Size(300, 27);
+            this.txtFullName.TabIndex = 7;
             // 
             // txtEmail
             // 
@@ -352,15 +352,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Profile";
             // 
-            // guna2CirclePictureBox1
+            // CirclepbProfile
             // 
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(15, 60);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.CirclepbProfile.ImageRotate = 0F;
+            this.CirclepbProfile.Location = new System.Drawing.Point(15, 60);
+            this.CirclepbProfile.Name = "CirclepbProfile";
+            this.CirclepbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.CirclepbProfile.Size = new System.Drawing.Size(200, 200);
+            this.CirclepbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CirclepbProfile.TabIndex = 0;
+            this.CirclepbProfile.TabStop = false;
             // 
             // label1
             // 
@@ -400,7 +401,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CirclepbProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,14 +422,14 @@
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.TextBox txtPhoneNumber;
-        private System.Windows.Forms.TextBox textFullName;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox CirclepbProfile;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Label label8;

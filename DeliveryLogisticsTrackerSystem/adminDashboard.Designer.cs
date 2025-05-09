@@ -29,27 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Home = new System.Windows.Forms.Button();
@@ -85,20 +78,13 @@
             this.userView = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Personnel = new System.Windows.Forms.TabPage();
-            this.ReloadPersonnel = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.PictureBox();
             this.DataPersonnel = new System.Windows.Forms.DataGridView();
-            this.PersonnelID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonnelStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SearchPersonnel = new System.Windows.Forms.TextBox();
             this.UpdatePersonnel = new System.Windows.Forms.PictureBox();
             this.DeletePersonnel = new System.Windows.Forms.PictureBox();
-            this.AddPersonnel = new System.Windows.Forms.PictureBox();
-            this.ViewPersonnel = new System.Windows.Forms.PictureBox();
+            this.btnAddpersonnel = new System.Windows.Forms.PictureBox();
+            this.BtnViewPersonnel = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.tabCompleteOrder = new System.Windows.Forms.TabPage();
             this.DataCompleteOrder = new System.Windows.Forms.DataGridView();
@@ -132,12 +118,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.userView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Personnel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReloadPersonnel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataPersonnel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpdatePersonnel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeletePersonnel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddPersonnel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewPersonnel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddpersonnel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnViewPersonnel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.tabCompleteOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataCompleteOrder)).BeginInit();
@@ -440,8 +426,8 @@
             // userID
             // 
             this.userID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.userID.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.userID.DefaultCellStyle = dataGridViewCellStyle1;
             this.userID.FillWeight = 10F;
             this.userID.HeaderText = "ID";
             this.userID.MinimumWidth = 8;
@@ -452,8 +438,8 @@
             // userEmail
             // 
             this.userEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.userEmail.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.userEmail.DefaultCellStyle = dataGridViewCellStyle2;
             this.userEmail.FillWeight = 50F;
             this.userEmail.HeaderText = "Email";
             this.userEmail.MinimumWidth = 8;
@@ -464,8 +450,8 @@
             // userFullName
             // 
             this.userFullName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.userFullName.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.userFullName.DefaultCellStyle = dataGridViewCellStyle3;
             this.userFullName.FillWeight = 50F;
             this.userFullName.HeaderText = "Full Name";
             this.userFullName.MinimumWidth = 8;
@@ -475,9 +461,9 @@
             // 
             // userAddress
             // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.userAddress.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userAddress.DefaultCellStyle = dataGridViewCellStyle4;
             this.userAddress.HeaderText = "Address";
             this.userAddress.MinimumWidth = 8;
             this.userAddress.Name = "userAddress";
@@ -486,8 +472,8 @@
             // userPhoneNumber
             // 
             this.userPhoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.userPhoneNumber.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.userPhoneNumber.DefaultCellStyle = dataGridViewCellStyle5;
             this.userPhoneNumber.FillWeight = 15F;
             this.userPhoneNumber.HeaderText = "Phone Number";
             this.userPhoneNumber.MinimumWidth = 8;
@@ -552,13 +538,13 @@
             // Personnel
             // 
             this.Personnel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.Personnel.Controls.Add(this.ReloadPersonnel);
+            this.Personnel.Controls.Add(this.btnRefresh);
             this.Personnel.Controls.Add(this.DataPersonnel);
             this.Personnel.Controls.Add(this.SearchPersonnel);
             this.Personnel.Controls.Add(this.UpdatePersonnel);
             this.Personnel.Controls.Add(this.DeletePersonnel);
-            this.Personnel.Controls.Add(this.AddPersonnel);
-            this.Personnel.Controls.Add(this.ViewPersonnel);
+            this.Personnel.Controls.Add(this.btnAddpersonnel);
+            this.Personnel.Controls.Add(this.BtnViewPersonnel);
             this.Personnel.Controls.Add(this.pictureBox10);
             this.Personnel.Location = new System.Drawing.Point(4, 29);
             this.Personnel.Name = "Personnel";
@@ -567,16 +553,17 @@
             this.Personnel.TabIndex = 1;
             this.Personnel.Text = "Personnel";
             // 
-            // ReloadPersonnel
+            // btnRefresh
             // 
-            this.ReloadPersonnel.Image = ((System.Drawing.Image)(resources.GetObject("ReloadPersonnel.Image")));
-            this.ReloadPersonnel.Location = new System.Drawing.Point(757, 15);
-            this.ReloadPersonnel.MaximumSize = new System.Drawing.Size(28, 28);
-            this.ReloadPersonnel.MinimumSize = new System.Drawing.Size(28, 28);
-            this.ReloadPersonnel.Name = "ReloadPersonnel";
-            this.ReloadPersonnel.Size = new System.Drawing.Size(28, 28);
-            this.ReloadPersonnel.TabIndex = 13;
-            this.ReloadPersonnel.TabStop = false;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.Location = new System.Drawing.Point(757, 15);
+            this.btnRefresh.MaximumSize = new System.Drawing.Size(28, 28);
+            this.btnRefresh.MinimumSize = new System.Drawing.Size(28, 28);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(28, 28);
+            this.btnRefresh.TabIndex = 13;
+            this.btnRefresh.TabStop = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // DataPersonnel
             // 
@@ -584,15 +571,6 @@
             this.DataPersonnel.BackgroundColor = System.Drawing.Color.White;
             this.DataPersonnel.ColumnHeadersHeight = 30;
             this.DataPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DataPersonnel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PersonnelID,
-            this.PersonnelEmail,
-            this.PersonnelFullName,
-            this.PersonnelAddress,
-            this.PersonnelPhoneNumber,
-            this.PersonnelRole,
-            this.PersonnelStatus});
-            this.DataPersonnel.EnableHeadersVisualStyles = false;
             this.DataPersonnel.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.DataPersonnel.Location = new System.Drawing.Point(0, 58);
             this.DataPersonnel.MaximumSize = new System.Drawing.Size(820, 332);
@@ -605,82 +583,6 @@
             this.DataPersonnel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataPersonnel.Size = new System.Drawing.Size(820, 332);
             this.DataPersonnel.TabIndex = 12;
-            // 
-            // PersonnelID
-            // 
-            this.PersonnelID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelID.DefaultCellStyle = dataGridViewCellStyle27;
-            this.PersonnelID.HeaderText = "ID";
-            this.PersonnelID.MinimumWidth = 8;
-            this.PersonnelID.Name = "PersonnelID";
-            this.PersonnelID.ReadOnly = true;
-            this.PersonnelID.Width = 60;
-            // 
-            // PersonnelEmail
-            // 
-            this.PersonnelEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelEmail.DefaultCellStyle = dataGridViewCellStyle28;
-            this.PersonnelEmail.HeaderText = "Email";
-            this.PersonnelEmail.MinimumWidth = 8;
-            this.PersonnelEmail.Name = "PersonnelEmail";
-            this.PersonnelEmail.ReadOnly = true;
-            this.PersonnelEmail.Width = 82;
-            // 
-            // PersonnelFullName
-            // 
-            this.PersonnelFullName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelFullName.DefaultCellStyle = dataGridViewCellStyle29;
-            this.PersonnelFullName.HeaderText = "Full Name";
-            this.PersonnelFullName.MinimumWidth = 8;
-            this.PersonnelFullName.Name = "PersonnelFullName";
-            this.PersonnelFullName.ReadOnly = true;
-            this.PersonnelFullName.Width = 112;
-            // 
-            // PersonnelAddress
-            // 
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PersonnelAddress.DefaultCellStyle = dataGridViewCellStyle30;
-            this.PersonnelAddress.HeaderText = "Address";
-            this.PersonnelAddress.MinimumWidth = 8;
-            this.PersonnelAddress.Name = "PersonnelAddress";
-            this.PersonnelAddress.ReadOnly = true;
-            // 
-            // PersonnelPhoneNumber
-            // 
-            this.PersonnelPhoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelPhoneNumber.DefaultCellStyle = dataGridViewCellStyle31;
-            this.PersonnelPhoneNumber.HeaderText = "Phone Number";
-            this.PersonnelPhoneNumber.MinimumWidth = 8;
-            this.PersonnelPhoneNumber.Name = "PersonnelPhoneNumber";
-            this.PersonnelPhoneNumber.ReadOnly = true;
-            this.PersonnelPhoneNumber.Width = 144;
-            // 
-            // PersonnelRole
-            // 
-            this.PersonnelRole.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelRole.DefaultCellStyle = dataGridViewCellStyle32;
-            this.PersonnelRole.HeaderText = "Role";
-            this.PersonnelRole.MinimumWidth = 8;
-            this.PersonnelRole.Name = "PersonnelRole";
-            this.PersonnelRole.ReadOnly = true;
-            this.PersonnelRole.Width = 75;
-            // 
-            // PersonnelStatus
-            // 
-            this.PersonnelStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PersonnelStatus.DefaultCellStyle = dataGridViewCellStyle33;
-            this.PersonnelStatus.HeaderText = "Status";
-            this.PersonnelStatus.MinimumWidth = 8;
-            this.PersonnelStatus.Name = "PersonnelStatus";
-            this.PersonnelStatus.ReadOnly = true;
-            this.PersonnelStatus.Width = 85;
             // 
             // SearchPersonnel
             // 
@@ -714,27 +616,30 @@
             this.DeletePersonnel.TabIndex = 9;
             this.DeletePersonnel.TabStop = false;
             // 
-            // AddPersonnel
+            // btnAddpersonnel
             // 
-            this.AddPersonnel.Image = ((System.Drawing.Image)(resources.GetObject("AddPersonnel.Image")));
-            this.AddPersonnel.Location = new System.Drawing.Point(628, 15);
-            this.AddPersonnel.MaximumSize = new System.Drawing.Size(28, 28);
-            this.AddPersonnel.MinimumSize = new System.Drawing.Size(28, 28);
-            this.AddPersonnel.Name = "AddPersonnel";
-            this.AddPersonnel.Size = new System.Drawing.Size(28, 28);
-            this.AddPersonnel.TabIndex = 8;
-            this.AddPersonnel.TabStop = false;
+            this.btnAddpersonnel.Image = ((System.Drawing.Image)(resources.GetObject("btnAddpersonnel.Image")));
+            this.btnAddpersonnel.Location = new System.Drawing.Point(628, 15);
+            this.btnAddpersonnel.MaximumSize = new System.Drawing.Size(28, 28);
+            this.btnAddpersonnel.MinimumSize = new System.Drawing.Size(28, 28);
+            this.btnAddpersonnel.Name = "btnAddpersonnel";
+            this.btnAddpersonnel.Size = new System.Drawing.Size(28, 28);
+            this.btnAddpersonnel.TabIndex = 8;
+            this.btnAddpersonnel.TabStop = false;
+            this.btnAddpersonnel.Click += new System.EventHandler(this.btnAddpersonnel_Click);
             // 
-            // ViewPersonnel
+            // BtnViewPersonnel
             // 
-            this.ViewPersonnel.Image = ((System.Drawing.Image)(resources.GetObject("ViewPersonnel.Image")));
-            this.ViewPersonnel.Location = new System.Drawing.Point(585, 15);
-            this.ViewPersonnel.MaximumSize = new System.Drawing.Size(28, 28);
-            this.ViewPersonnel.MinimumSize = new System.Drawing.Size(28, 28);
-            this.ViewPersonnel.Name = "ViewPersonnel";
-            this.ViewPersonnel.Size = new System.Drawing.Size(28, 28);
-            this.ViewPersonnel.TabIndex = 7;
-            this.ViewPersonnel.TabStop = false;
+            this.BtnViewPersonnel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnViewPersonnel.Image = ((System.Drawing.Image)(resources.GetObject("BtnViewPersonnel.Image")));
+            this.BtnViewPersonnel.Location = new System.Drawing.Point(585, 15);
+            this.BtnViewPersonnel.MaximumSize = new System.Drawing.Size(28, 28);
+            this.BtnViewPersonnel.MinimumSize = new System.Drawing.Size(28, 28);
+            this.BtnViewPersonnel.Name = "BtnViewPersonnel";
+            this.BtnViewPersonnel.Size = new System.Drawing.Size(28, 28);
+            this.BtnViewPersonnel.TabIndex = 7;
+            this.BtnViewPersonnel.TabStop = false;
+            this.BtnViewPersonnel.Click += new System.EventHandler(this.BtnViewPersonnel_Click);
             // 
             // pictureBox10
             // 
@@ -795,8 +700,8 @@
             // CompID
             // 
             this.CompID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompID.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompID.DefaultCellStyle = dataGridViewCellStyle6;
             this.CompID.FillWeight = 10F;
             this.CompID.HeaderText = "ID";
             this.CompID.MinimumWidth = 8;
@@ -807,8 +712,8 @@
             // CompEmail
             // 
             this.CompEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompEmail.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompEmail.DefaultCellStyle = dataGridViewCellStyle7;
             this.CompEmail.FillWeight = 30F;
             this.CompEmail.HeaderText = "Email";
             this.CompEmail.MinimumWidth = 8;
@@ -819,8 +724,8 @@
             // CompFullName
             // 
             this.CompFullName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompFullName.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompFullName.DefaultCellStyle = dataGridViewCellStyle8;
             this.CompFullName.FillWeight = 30F;
             this.CompFullName.HeaderText = "Full Name";
             this.CompFullName.MinimumWidth = 8;
@@ -831,9 +736,9 @@
             // CompPickUp
             // 
             this.CompPickUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CompPickUp.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CompPickUp.DefaultCellStyle = dataGridViewCellStyle9;
             this.CompPickUp.FillWeight = 50F;
             this.CompPickUp.HeaderText = "Pick Up Address";
             this.CompPickUp.MinimumWidth = 8;
@@ -844,9 +749,9 @@
             // CompDropOff
             // 
             this.CompDropOff.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CompDropOff.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CompDropOff.DefaultCellStyle = dataGridViewCellStyle10;
             this.CompDropOff.FillWeight = 50F;
             this.CompDropOff.HeaderText = "Drop Off Address";
             this.CompDropOff.MinimumWidth = 8;
@@ -857,8 +762,8 @@
             // CompDropOffName
             // 
             this.CompDropOffName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompDropOffName.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompDropOffName.DefaultCellStyle = dataGridViewCellStyle11;
             this.CompDropOffName.FillWeight = 50F;
             this.CompDropOffName.HeaderText = "Drop Off Name";
             this.CompDropOffName.MinimumWidth = 8;
@@ -869,8 +774,8 @@
             // CompNameDriver
             // 
             this.CompNameDriver.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompNameDriver.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompNameDriver.DefaultCellStyle = dataGridViewCellStyle12;
             this.CompNameDriver.FillWeight = 50F;
             this.CompNameDriver.HeaderText = "Personnel Name";
             this.CompNameDriver.MinimumWidth = 8;
@@ -881,8 +786,8 @@
             // CompPrice
             // 
             this.CompPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompPrice.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompPrice.DefaultCellStyle = dataGridViewCellStyle13;
             this.CompPrice.FillWeight = 20F;
             this.CompPrice.HeaderText = "Price";
             this.CompPrice.MinimumWidth = 8;
@@ -893,8 +798,8 @@
             // CompStatus
             // 
             this.CompStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CompStatus.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CompStatus.DefaultCellStyle = dataGridViewCellStyle14;
             this.CompStatus.FillWeight = 20F;
             this.CompStatus.HeaderText = "Status";
             this.CompStatus.MinimumWidth = 8;
@@ -1002,12 +907,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Personnel.ResumeLayout(false);
             this.Personnel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReloadPersonnel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataPersonnel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpdatePersonnel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeletePersonnel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddPersonnel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewPersonnel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddpersonnel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnViewPersonnel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.tabCompleteOrder.ResumeLayout(false);
             this.tabCompleteOrder.PerformLayout();
@@ -1061,8 +966,8 @@
         private System.Windows.Forms.TextBox SearchPersonnel;
         private System.Windows.Forms.PictureBox UpdatePersonnel;
         private System.Windows.Forms.PictureBox DeletePersonnel;
-        private System.Windows.Forms.PictureBox AddPersonnel;
-        private System.Windows.Forms.PictureBox ViewPersonnel;
+        private System.Windows.Forms.PictureBox btnAddpersonnel;
+        private System.Windows.Forms.PictureBox BtnViewPersonnel;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.DataGridView DataPersonnel;
         private System.Windows.Forms.DataGridView DataCompleteOrder;
@@ -1071,14 +976,7 @@
         private System.Windows.Forms.PictureBox DeleteComp;
         private System.Windows.Forms.PictureBox ViewComp;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox ReloadPersonnel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelFullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelPhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelRole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonnelStatus;
+        private System.Windows.Forms.PictureBox btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompFullName;
