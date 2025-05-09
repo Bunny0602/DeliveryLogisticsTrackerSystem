@@ -53,6 +53,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -75,10 +77,10 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(439, 231);
+            this.textBox3.Location = new System.Drawing.Point(439, 278);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 100);
+            this.textBox3.Size = new System.Drawing.Size(300, 88);
             this.textBox3.TabIndex = 16;
             // 
             // textBox2
@@ -135,6 +137,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(241)))), ((int)(((byte)(233)))));
+            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.textBox3);
             this.panel7.Controls.Add(this.textBox2);
             this.panel7.Controls.Add(this.textBox1);
@@ -187,7 +191,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label6.Location = new System.Drawing.Point(349, 268);
+            this.label6.Location = new System.Drawing.Point(349, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 28);
             this.label6.TabIndex = 5;
@@ -359,6 +363,28 @@
             this.panel1.Size = new System.Drawing.Size(300, 600);
             this.panel1.TabIndex = 43;
             // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(439, 231);
+            this.textBox4.MaximumSize = new System.Drawing.Size(300, 27);
+            this.textBox4.MinimumSize = new System.Drawing.Size(300, 27);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(300, 27);
+            this.textBox4.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.label7.Location = new System.Drawing.Point(337, 231);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 28);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Password";
+            // 
             // UpdatePersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
@@ -418,5 +444,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
     }
 }
