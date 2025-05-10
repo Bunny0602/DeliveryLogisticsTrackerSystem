@@ -170,7 +170,7 @@ namespace DeliveryLogisticsTrackerSystem
             {
                 try
                 {
-                    string query = @"SELECT email, full_name, phone_number, role, status, address, profile_image FROM personnel WHERE personnel_id = @ID";
+                    string query = @"SELECT email, full_name, phone_number, role, status, address, profile_image, password FROM personnel WHERE personnel_id = @ID";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
@@ -229,6 +229,95 @@ namespace DeliveryLogisticsTrackerSystem
                     return false;
                 }
             }
+        }
+
+        public bool DelPersonnel (int id)
+        {
+            using (MySqlConnection conn = GetConnection())
+            {
+                string query = "DELETE FROM personnel WHERE personnel_id = @ID";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
+
+                    try
+                    {
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error deleting personnel: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public bool UpdatePersonnel(int id, string email, string fullName, string phoneNumber, string address, string password, byte[] profileImage)
+        {
+            MySqlConnection conn = GetConnection();
+
+            if (conn == null) return false;
+
+            try
+            {
+                string query = @"UPDATE personnel SET email = @Email, full_name = @FullName, phone_number = @PhoneNumber, address = @Address, password = @Password, profile_image = @Profile WHERE personnel_id = @ID";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@FullName", fullName);
+                cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                cmd.Parameters.AddWithValue("@Address", address);
+                cmd.Parameters.AddWithValue("@Password", password);
+                cmd.Parameters.AddWithValue("@ID", id);
+
+                if (profileImage != null)
+                {
+                    cmd.Parameters.AddWithValue("@Profile", profileImage);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@Profile", DBNull.Value);
+                }
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating personnel: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public string GetPersonnelPassword(int personnelID)
+        {
+            string password = string.Empty;
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                try
+                {
+                    string query = "SELECT password FROM personnel WHERE personnel_id = @ID";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", personnelID);
+                        conn.Open();
+                        password = cmd.ExecuteScalar()?.ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error getting password: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return password;
         }
     }
 }

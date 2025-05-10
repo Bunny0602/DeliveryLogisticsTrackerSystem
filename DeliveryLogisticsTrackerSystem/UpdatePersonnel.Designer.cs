@@ -30,20 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePersonnel));
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUploadImage = new System.Windows.Forms.Button();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnUpDateImage = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ProfileUpdate = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Home = new System.Windows.Forms.Button();
@@ -53,11 +55,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,37 +73,37 @@
             this.panel8.Size = new System.Drawing.Size(300, 2);
             this.panel8.TabIndex = 42;
             // 
-            // textBox3
+            // txtAddress
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(439, 278);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 88);
-            this.textBox3.TabIndex = 16;
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(439, 278);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(300, 88);
+            this.txtAddress.TabIndex = 16;
             // 
-            // textBox2
+            // txtPhone
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(439, 174);
-            this.textBox2.MaximumSize = new System.Drawing.Size(300, 27);
-            this.textBox2.MinimumSize = new System.Drawing.Size(300, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 27);
-            this.textBox2.TabIndex = 15;
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(439, 174);
+            this.txtPhone.MaximumSize = new System.Drawing.Size(300, 27);
+            this.txtPhone.MinimumSize = new System.Drawing.Size(300, 27);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(300, 27);
+            this.txtPhone.TabIndex = 15;
             // 
-            // textBox1
+            // txtFullName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(439, 117);
-            this.textBox1.MaximumSize = new System.Drawing.Size(300, 27);
-            this.textBox1.MinimumSize = new System.Drawing.Size(300, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 27);
-            this.textBox1.TabIndex = 14;
+            this.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(439, 117);
+            this.txtFullName.MaximumSize = new System.Drawing.Size(300, 27);
+            this.txtFullName.MinimumSize = new System.Drawing.Size(300, 27);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(300, 27);
+            this.txtFullName.TabIndex = 14;
             // 
             // txtEmail
             // 
@@ -133,25 +133,26 @@
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(241)))), ((int)(((byte)(233)))));
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.txtPass);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.textBox3);
-            this.panel7.Controls.Add(this.textBox2);
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.txtAddress);
+            this.panel7.Controls.Add(this.txtPhone);
+            this.panel7.Controls.Add(this.txtFullName);
             this.panel7.Controls.Add(this.txtEmail);
             this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Controls.Add(this.btnUploadImage);
+            this.panel7.Controls.Add(this.btnUpDateImage);
             this.panel7.Controls.Add(this.back);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Controls.Add(this.guna2CirclePictureBox1);
+            this.panel7.Controls.Add(this.ProfileUpdate);
             this.panel7.Location = new System.Drawing.Point(345, 143);
             this.panel7.MaximumSize = new System.Drawing.Size(810, 424);
             this.panel7.MinimumSize = new System.Drawing.Size(810, 424);
@@ -159,23 +160,46 @@
             this.panel7.Size = new System.Drawing.Size(810, 424);
             this.panel7.TabIndex = 53;
             // 
-            // btnUploadImage
+            // txtPass
             // 
-            this.btnUploadImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
-            this.btnUploadImage.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnUploadImage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUploadImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
-            this.btnUploadImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(34)))));
-            this.btnUploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUploadImage.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.btnUploadImage.Location = new System.Drawing.Point(37, 324);
-            this.btnUploadImage.MaximumSize = new System.Drawing.Size(156, 31);
-            this.btnUploadImage.MinimumSize = new System.Drawing.Size(156, 31);
-            this.btnUploadImage.Name = "btnUploadImage";
-            this.btnUploadImage.Size = new System.Drawing.Size(156, 31);
-            this.btnUploadImage.TabIndex = 11;
-            this.btnUploadImage.Text = "Upload Image";
-            this.btnUploadImage.UseVisualStyleBackColor = false;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(439, 231);
+            this.txtPass.MaximumSize = new System.Drawing.Size(300, 27);
+            this.txtPass.MinimumSize = new System.Drawing.Size(300, 27);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(300, 27);
+            this.txtPass.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.label7.Location = new System.Drawing.Point(337, 231);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 28);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Password";
+            // 
+            // btnUpDateImage
+            // 
+            this.btnUpDateImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
+            this.btnUpDateImage.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnUpDateImage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUpDateImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(119)))), ((int)(((byte)(67)))));
+            this.btnUpDateImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(34)))));
+            this.btnUpDateImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpDateImage.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.btnUpDateImage.Location = new System.Drawing.Point(37, 324);
+            this.btnUpDateImage.MaximumSize = new System.Drawing.Size(156, 31);
+            this.btnUpDateImage.MinimumSize = new System.Drawing.Size(156, 31);
+            this.btnUpDateImage.Name = "btnUpDateImage";
+            this.btnUpDateImage.Size = new System.Drawing.Size(156, 31);
+            this.btnUpDateImage.TabIndex = 11;
+            this.btnUpDateImage.Text = "Upload Image";
+            this.btnUpDateImage.UseVisualStyleBackColor = false;
+            this.btnUpDateImage.Click += new System.EventHandler(this.btnUpDateImage_Click);
             // 
             // back
             // 
@@ -241,17 +265,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Profile";
             // 
-            // guna2CirclePictureBox1
+            // ProfileUpdate
             // 
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(15, 107);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.ProfileUpdate.Image = ((System.Drawing.Image)(resources.GetObject("ProfileUpdate.Image")));
+            this.ProfileUpdate.ImageRotate = 0F;
+            this.ProfileUpdate.Location = new System.Drawing.Point(15, 107);
+            this.ProfileUpdate.Name = "ProfileUpdate";
+            this.ProfileUpdate.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ProfileUpdate.Size = new System.Drawing.Size(200, 200);
+            this.ProfileUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProfileUpdate.TabIndex = 0;
+            this.ProfileUpdate.TabStop = false;
             // 
             // label1
             // 
@@ -363,28 +387,6 @@
             this.panel1.Size = new System.Drawing.Size(300, 600);
             this.panel1.TabIndex = 43;
             // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(439, 231);
-            this.textBox4.MaximumSize = new System.Drawing.Size(300, 27);
-            this.textBox4.MinimumSize = new System.Drawing.Size(300, 27);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 27);
-            this.textBox4.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label7.Location = new System.Drawing.Point(337, 231);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 28);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Password";
-            // 
             // UpdatePersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 12F);
@@ -410,7 +412,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -421,20 +423,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnUploadImage;
+        private System.Windows.Forms.Button btnUpDateImage;
         private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox ProfileUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Home;
@@ -444,7 +445,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtAddress;
     }
 }
