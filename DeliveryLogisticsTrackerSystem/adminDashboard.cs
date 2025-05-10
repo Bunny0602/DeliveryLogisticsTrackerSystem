@@ -92,5 +92,48 @@ namespace DeliveryLogisticsTrackerSystem
         {
             Refresh();
         }
+
+        private void btnDelPersonnel_Click(object sender, EventArgs e)
+        {
+            if(DataPersonnel.SelectedRows.Count > 0)
+            {
+                int selectedID = Convert.ToInt32(DataPersonnel.SelectedRows[0].Cells["ID"].Value);
+                DialogResult confirm = MessageBox.Show("Are you sure you want to delete this personnel?", "Delete Personnel", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (confirm == DialogResult.Yes)
+                {
+                    bool isDeleted = db.DelPersonnel(selectedID);
+
+                    if (isDeleted)
+                    {
+                        MessageBox.Show("Personnel deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Refresh();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error deleting personnel.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a personnel to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnUpdatePersonnel_Click(object sender, EventArgs e)
+        {
+            if(DataPersonnel.SelectedRows.Count > 0)
+            {
+                int selectedID = Convert.ToInt32(DataPersonnel.SelectedRows[0].Cells["ID"].Value);
+                UpdatePersonnel updateForm = new UpdatePersonnel(selectedID);
+                updateForm.ShowDialog();
+                Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Please select a personnel to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
